@@ -1,0 +1,11 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmitForm()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" formControlName="title">
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <input type="text" class="form-control" id="content" formControlName="content">
+  </div>
+  <button class="btn btn-primary" type="submit" [disabled]="postForm.invalid">Send</button>
+</form>

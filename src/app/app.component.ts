@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Post} from './models/post.model';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +8,7 @@ import {Post} from './models/post.model';
 })
 export class AppComponent {
   title = 'Blog';
-  postList = new Array<Post>();
 
-  constructor() {
-    for (let i = 1; i <= 3; i ++ ) {
-    this.postList.push(new Post('Titre' + i, 'Contenu' + i));
-    }
-  }
+  constructor() {}
 }
 

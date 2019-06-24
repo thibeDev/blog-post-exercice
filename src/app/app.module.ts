@@ -12,6 +12,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeartBroken } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class AppModule {
   constructor() {
     // Add an icon to the library for convenient access in other components
-    library.add(faCoffee);
+    library.add(faCoffee, faHeart, faHeartBroken);
     library.add(faTimes);
   }
 }

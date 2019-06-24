@@ -28,8 +28,8 @@
       {{ content }}
     </div>
     <div>
-      <button class="btn btn-success mr-3" (click)="onLoveIt()">Love it!</button>
-      <button class="btn btn-danger" (click)="dontLoveIt()">Don't love it!</button>
+      <a (click)="onLoveIt()" class="text-success clickable h3 mr-3"><fa-icon [icon]="['fas', 'heart']"></fa-icon></a>
+      <a (click)="dontLoveIt()" class="text-danger clickable h3"><fa-icon [icon]="['fas', 'heart-broken']"></fa-icon></a>
     </div>
   </div>
 </li>
